@@ -109,6 +109,196 @@
   transform: scale(1.1);
 }
 
+/* Enhanced styling for better visual appeal */
+.project-wrap {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.project-wrap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.badge-primary {
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+}
+
+.icon-check {
+  color: #4CAF50;
+}
+
+/* Enhanced section headings */
+.big {
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Animated underline for links */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2196F3;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+/* Enhanced list styling */
+.list-unstyled li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.list-unstyled li:last-child {
+  border-bottom: none;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Enhanced section transitions */
+.ftco-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.ftco-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(33, 150, 243, 0.05), rgba(25, 118, 210, 0.05));
+  z-index: -1;
+}
+
+/* Enhanced contact form */
+.contact-form input,
+.contact-form textarea {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2196F3;
+  box-shadow: 0 0 15px rgba(33, 150, 243, 0.1);
+}
+
+/* Skill badges animation */
+@keyframes skillPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  color: white;
+  font-size: 0.9rem;
+  animation: skillPulse 2s infinite;
+}
+
+/* Enhanced timeline for experience */
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, #2196F3, #1976D2);
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2196F3;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+/* Project image zoom effect enhancement */
+.zoom-effect {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.zoom-effect img {
+  transition: transform 0.5s ease;
+}
+
+.zoom-effect:hover img {
+  transform: scale(1.1);
+}
+
+/* Enhanced footer */
+.ftco-footer {
+  background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+  color: #fff;
+}
+
+.ftco-footer a {
+  color: #2196F3;
+  transition: all 0.3s ease;
+}
+
+.ftco-footer a:hover {
+  color: #1976D2;
+  text-decoration: none;
+}
 
 </style>
 
@@ -130,12 +320,13 @@
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
 	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#freelance-section" class="nav-link"><span>Freelance</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#honours-section" class="nav-link"><span>Honours</span></a></li>
 	          <li class="nav-item"><a href="#leadership-section" class="nav-link"><span>Leadership</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	          <li class="nav-item">
-                <a href="https://drive.google.com/file/d/1JHNqZwX1qov_U4l7k2u3ivA9FVKXto9K/view?usp=sharing" class="nav-link" download="Resume.pdf"><span>Download Resume</span></a>
+                <a href="https://drive.google.com/file/d/1S0fjARmoxeoQesDytQyzMgb7h8bY92NB/view?usp=sharing" class="nav-link" target="_blank"><span>Download Resume</span></a>
               </li>
 	        </ul>
 	      </div>
@@ -280,6 +471,49 @@
       </div>
     </section>
 
+    <!-- Freelance Section -->
+    <section class="ftco-section" id="freelance-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Freelance</h1>
+            <h2 class="mb-4">Freelance Projects</h2>
+            <p>Successful freelance projects delivered with high client satisfaction.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="project-wrap ftco-animate zoom-effect">
+              <div class="text p-4">
+                <h3 class="mb-2">
+                  <a href="https://github.com/Shashankpantiitbhilai/EduGainer-s" target="_blank">EduGainer</a> | 
+                  <a href="https://www.edugainers.com" target="_blank" class="text-primary">Live Site</a>
+                </h3>
+                <span class="date">May 2024 - June 2024</span>
+                <p class="mt-3">A comprehensive educational platform with advanced features and seamless user experience.</p>
+                <ul class="mt-3 list-unstyled">
+                  <li><i class="icon-check mr-2"></i>Built comprehensive user and admin panels with secure role-based access control.</li>
+                  <li><i class="icon-check mr-2"></i>Integrated payment gateway for seamless fee transactions.</li>
+                  <li><i class="icon-check mr-2"></i>Implemented background services using cron jobs and schedulers for automation.</li>
+                  <li><i class="icon-check mr-2"></i>Used WebSockets to enable real-time seat booking status updates.</li>
+                  <li><i class="icon-check mr-2"></i>Deployed a live chatbot for immediate customer support.</li>
+                  <li><i class="icon-check mr-2"></i>Added SEO enhancements to improve site visibility and Google search rankings.</li>
+                </ul>
+                <div class="mt-4">
+                  <span class="badge badge-primary p-2 mr-2">Node.js</span>
+                  <span class="badge badge-primary p-2 mr-2">React</span>
+                  <span class="badge badge-primary p-2 mr-2">MongoDB</span>
+                  <span class="badge badge-primary p-2 mr-2">WebSocket</span>
+                  <span class="badge badge-primary p-2 mr-2">SEO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="ftco-section" id="project-section">
       <div class="container">
@@ -294,7 +528,11 @@
           <!-- NebulaDB Project -->
           <div class="col-md-6">
             <div class="project-wrap ftco-animate">
-              <h3><a href="https://github.com/YourGithubUsername/NebulaDB" target="_blank">NebulaDB</a></h3>
+              <h3>
+                <a href="https://github.com/Shashankpantiitbhilai/NebulaDB.git" target="_blank">NebulaDB</a> | 
+                <a href="https://www.npmjs.com/package/nebula-db1" target="_blank">NPM</a> | 
+                <a href="https://npm-stat.com/charts.html?package=nebula-db1" target="_blank">Statistics</a>
+              </h3>
               <span>Apr 2024 - Jun 2024</span>
               <p>Database management tool with intuitive API and secure setup.</p>
               <ul>
@@ -308,7 +546,10 @@
           <!-- CredXpert Project -->
           <div class="col-md-6">
             <div class="project-wrap ftco-animate">
-              <h3><a href="https://github.com/YourGithubUsername/CredXpert" target="_blank">CredXpert</a></h3>
+              <h3>
+                <a href="https://github.com/Shashankpantiitbhilai/CreditSea" target="_blank">CredXpert</a> | 
+                <a href="https://creditsea2.onrender.com/" target="_blank">Live Demo</a>
+              </h3>
               <span>Mar 2024 - Apr 2024</span>
               <p>Advanced loan management platform with role-based access control.</p>
               <ul>
@@ -322,7 +563,10 @@
           <!-- SquadCraft AI Project -->
           <div class="col-md-6">
             <div class="project-wrap ftco-animate">
-              <h3><a href="https://github.com/YourGithubUsername/SquadCraft-AI" target="_blank">SquadCraft AI</a></h3>
+              <h3>
+                <a href="https://github.com/Shashankpantiitbhilai/Fantasy-team-recommendation" target="_blank">SquadCraft AI</a> | 
+                <a href="https://drive.google.com/file/d/1t1756TBPiHaJhXbLRaKRhnsJjQBv-JpD/view?usp=sharing" target="_blank">Demo Video</a>
+              </h3>
               <span>Nov 2024 - Dec 2024</span>
               <p>AI-powered fantasy cricket team recommendation system.</p>
               <ul>
@@ -336,7 +580,10 @@
           <!-- Ecommerce Sevak Project -->
           <div class="col-md-6">
             <div class="project-wrap ftco-animate">
-              <h3><a href="https://github.com/YourGithubUsername/Ecommerce-Sevak" target="_blank">Ecommerce Sevak</a></h3>
+              <h3>
+                <a href="https://github.com/Shashankpantiitbhilai/Ecommerce_Sevak.git" target="_blank">Ecommerce Sevak</a> | 
+                <a href="https://drive.google.com/file/d/117G3rQaEOApjOh-yyIsMP-979TMEzVWI/view?usp=sharing" target="_blank">Demo Video</a>
+              </h3>
               <span>Dec 2023 - Feb 2024</span>
               <p>Chrome extension for detecting dark patterns in e-commerce.</p>
               <ul>
@@ -363,9 +610,16 @@
           <div class="col-md-12">
             <div class="resume-wrap ftco-animate">
               <ul class="mt-4">
-                <li>Knight on LeetCode, Specialist on Codeforces</li>
-                <li>Top contender at Govt. of India's Dark Pattern Buster Hackathon</li>
-                <li>3-star on CodeChef and GeeksforGeeks</li>
+                <li>Knight on LeetCode, Specialist on Codeforces. 
+                    <a href="https://codeforces.com/profile/Sherlock_holm" target="_blank">(Profile)</a>
+                </li>
+                <li>Top contender at Govt. of India's Dark Pattern Buster Hackathon. 
+                    <a href="https://drive.google.com/file/d/1S0fjARmoxeoQesDytQyzMgb7h8bY92NB/view?usp=sharing" target="_blank">Certificate</a>
+                </li>
+                <li>3-star on CodeChef and GeeksforGeeks. 
+                    <a href="https://www.codechef.com/users/shashankp70" target="_blank">(CodeChef)</a> 
+                    <a href="https://www.geeksforgeeks.org/user/shashankp7qkp/" target="_blank">(GFG)</a>
+                </li>
                 <li>AIR 21 in AlgoUniversity Graph Contest</li>
               </ul>
             </div>
@@ -449,9 +703,10 @@
                 <span class="icon-globe"></span>
               </div>
               <h3 class="mb-4">Links</h3>
-              <p><a href="https://www.linkedin.com/in/yourlinkedin">LinkedIn</a></p>
-              <p><a href="https://github.com/yourgithub">GitHub</a></p>
-              <p><a href="https://leetcode.com/yourprofile">LeetCode</a></p>
+              <p><a href="https://www.linkedin.com/in/shashankpant12/" target="_blank">LinkedIn</a></p>
+              <p><a href="https://github.com/Shashankpantiitbhilai" target="_blank">GitHub</a></p>
+              <p><a href="https://leetcode.com/u/shashankpant/" target="_blank">LeetCode</a></p>
+              <p><a href="https://portfolio-0bhi.onrender.com/" target="_blank">Portfolio</a></p>
             </div>
           </div>
         </div>
